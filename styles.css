@@ -42,3 +42,15 @@ nav {
 .maui__metal--logo {
   max-width: 100vw;
 }
+
+#music {
+  display: flex;
+  justify-content: center;
+  max-width: 100vw;
+}
+
+.maui__player {
+  display: flex;
+  justify-content: center;
+  max-width: 100vw;
+}
