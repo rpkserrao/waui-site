@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
+  <script src="https://kit.fontawesome.com/990a7d33f9.js" crossorigin="anonymous"></script>
   <title>maui waui</title>
 </head>
 <body>
@@ -28,7 +29,7 @@
     <section id="music__player">
       <div class="container">
         <div class="row">
-          <audio class="maui__player" controls autoplay preload="auto">
+          <audio autoplay class="maui__player" controls preload="auto">
             <source src="./assets/thereisnorealme.mp3" type="audio/mpeg">
             Your browser does not support the audio element.
           </audio>
@@ -38,12 +39,64 @@
     <section id="music">
       <div class="container">
         <div class="row">
-          <div class="album__art--wrapper">
-            <img class="album__art" src="./assets/1706895333820.png" alt="">
-            <img src="./assets/1705975552231.png" alt="" class="album__art">
-            <img src="./assets/Screenshot_20220204-030001_Glitch.jpg" alt="" class="album__art">
-            <img src="./assets/Screenshot_27-9-2026_16462_soundcloud.com.jpeg" alt="" class="album__art">
-          </div>
+          <ul class="album__list">
+            <li class="album">
+              <div class="album__art--wrapper">
+                <img class="album__art" src="./assets/1706895333820.png" alt="">
+                <div class="album__description">
+                  <h3 class="album__title">That's Fair, Too</h3>
+                  <p class="album__year">2024</p>
+                  <div class="album__links">
+                    <a href="https://soundcloud.com/mauiwauifya/sets/thats-fair-too" target="_blank" class="album__link">
+                      <i class="fab fa-soundcloud"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="album">
+              <div class="album__art--wrapper">
+                <img class="album__art" src="./assets/1705975552231.png" alt="">
+                <div class="album__description">
+                  <h3 class="album__title">BST Demo(bootleg mix)</h3>
+                  <p class="album__year">2024</p>
+                  <div class="album__links">
+                    <a href="https://soundcloud.com/mauiwauifya/sets/bstdemobootleg" target="_blank" class="album__link">
+                      <i class="fab fa-soundcloud"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="album">
+              <div class="album__art--wrapper">
+                <img class="album__art" src="./assets/Screenshot_20220204-030001_Glitch.jpg" alt="">
+                <div class="album__description">
+                  <h3 class="album__title">Midnight Run</h3>
+                  <p class="album__year">2022</p>
+                  <div class="album__links">
+                    <a href="https://soundcloud.com/mauiwauifya/sets/midnightrun" target="_blank" class="album__link">
+                      <i class="fab fa-soundcloud"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="album">
+              <div class="album__art--wrapper">
+                <img class="album__art" src="./assets/Screenshot_27-9-2026_16462_soundcloud.com.jpeg" alt="">
+                <div class="album__description">
+                  <h3 class="album__title">Bestfriends</h3>
+                  <p class="album__year">2018</p>
+                  <div class="album__links">
+                    <a href="https://soundcloud.com/mauiwauifya/sets/bestfriends-1" target="_blank" class="album__link">
+                      <i class="fab fa-soundcloud"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
         </div>
       </div>
     </section>
