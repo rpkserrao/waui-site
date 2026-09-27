@@ -171,6 +171,14 @@ li {
   .album__art--wrapper{
     max-height: 300px;
   }
+
+  .album__description {
+  transform: translateY(-100%);
+  }
+
+  .album:hover .album__description {
+  transform: translateY(-250%);
+  }
 }
 
 
@@ -182,5 +190,9 @@ li {
 
   .album__art--wrapper{
     max-height: 200px;
+  }
+
+  .album:hover .album__description {
+  transform: translateY(-200%);
   }
 }
