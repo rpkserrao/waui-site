@@ -5,10 +5,26 @@
   margin: 0;
   box-sizing: border-box;
   text-decoration: none;
+  background-color: #242424;
 }
 
 html {
   scroll-behavior: smooth;
+}
+
+h1, h2, h3, h4, h5, h6, span {
+  text-align: center;
+  line-height: 1.25;
+}
+
+h1 {
+  font-size: 36px;
+}
+
+p {
+  text-align: center;
+  line-height: 1.5;
+  font-size: 16px;
 }
 
 nav {
@@ -42,11 +58,11 @@ li {
 
 .nav__links {
   font-size: 24px;
-  color: #242424;
+  color: black;
 }
 
 .nav__link--anchor {
-  color: #242424;
+  color: black;
 }
 
 .nav__link--anchor:hover {
@@ -61,12 +77,60 @@ li {
   display: flex;
   justify-content: center;
   max-width: 100vw;
+  opacity: 0.5;
 }
 
 #music {
   justify-content: center;
   max-width: 100vw;
   padding: 20px 20px;
+}
+
+.album {
+  
+}
+
+.album__art {
+  display: inline-flex;
+  max-width: 500px;
+  max-height: 500px;
+  padding: 20px;
+  /* cursor: pointer; */
+  transition: all 500ms ease;
+  z-index: 2;
+}
+
+.album__art--wrapper {
+  max-height: 500px;
+}
+
+.album__art--wrapper:before {
+  content: "";
+  top: 0;
+  left: 0;
+  padding-bottom: 20px;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: opacity 450ms ease;
+  z-index: 0;
+}
+
+.album:hover .album__art--wrapper:before {
+  opacity: 0.7;
+}
+
+.album:hover .album__art {
+  transform: scale(1.07);
+  filter: blur(5px);
+}
+
+.album:hover .album__description {
+  opacity: 1;
+}
+
+.album__link:hover {
+  color: blueviolet;
 }
 
 .maui__player {
@@ -82,10 +146,45 @@ li {
   width: 100%;
 }
 
-.album__art {
-  display: inline-flex;
+.album__description {
+  top: 50%;
+  left: 90px;
+  transform: translateY(-150%);
   max-width: 200px;
-  max-height: 200px;
-  padding: 20px;
-  cursor: pointer;
+  z-index: 3;
+  opacity: 0;
+  transition: transform 450ms, opacity 300ms;
+}
+
+
+
+.album__links, .album__description,
+.album__title, .album__year,
+.album__link {
+  text-align: center;
+  color: grey;
+}
+
+
+@media (max-width: 768px) {
+  .album__art {
+    max-height: 300px;
+    max-width: 300px;
+  }
+
+  .album__art--wrapper{
+    max-height: 300px;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .album__art {
+    max-height: 200px;
+    max-width: 200px;
+  }
+
+  .album__art--wrapper{
+    max-height: 200px;
+  }
 }
