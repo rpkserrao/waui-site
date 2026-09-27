@@ -122,7 +122,8 @@ li {
 }
 
 .album:hover .album__description {
-  opacity: 1;
+  opacity: .75;
+  transform: translateY(-400%);
 }
 
 .album__link:hover {
@@ -145,11 +146,11 @@ li {
 .album__description {
   top: 50%;
   left: 90px;
-  transform: translateY(-150%);
-  max-width: 200px;
+  transform: translateY(-100%);
+  max-width: 100%;
   z-index: 3;
   opacity: 0;
-  transition: transform 450ms, opacity 300ms;
+  transition: transform 300ms, opacity 300ms;
 }
 
 
