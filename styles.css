@@ -86,10 +86,6 @@ li {
   padding: 20px 20px;
 }
 
-.album {
-  
-}
-
 .album__art {
   display: inline-flex;
   max-width: 500px;
