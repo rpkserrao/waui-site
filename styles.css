@@ -214,6 +214,10 @@ footer {
   position: relative;
 }
 
+.footer__link {
+  font-size: 15px;
+}
+
 
 @media (max-width: 768px) {
   .album__art {
