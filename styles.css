@@ -236,6 +236,10 @@ footer {
   .album:hover .album__description {
   transform: translateY(-250%);
   }
+
+  .footer__logo--img {
+    height: calc(70px / 2);
+  }
 }
 
 
