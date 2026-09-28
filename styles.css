@@ -5,6 +5,7 @@
   margin: 0;
   box-sizing: border-box;
   text-decoration: none;
+  cursor: cell;
 }
 
 html {
@@ -26,7 +27,7 @@ p {
   font-size: 16px;
 }
 
-a {
+a, path {
   font-size: 24px;
   color: black;
   cursor: crosshair;
@@ -51,9 +52,14 @@ li {
   list-style-type: none;
 }
 
-header, body {
+header {
   background-color: #3b0063;
 }
+
+body {
+  background-image: linear-gradient(#3b0063, #242424);
+}
+
 .container {
   position: relative;
   display: flex;
@@ -74,12 +80,32 @@ header, body {
 
 .nav__logo {
   max-height: 64px;
+  max-width: 64px;
+  transform-style: preserve-3d;
+  animation: rotateText 5s infinite linear;
+}
+
+@keyframes rotateText {
+  0% {
+    transform: rotateX(0deg) rotateY(0deg);
+  }
+   50% {
+    transform: rotateX(0deg) rotateY(180deg);
+  }
+   100% {
+    transform: rotateX(0deg) rotateY(360deg);
+  }
 }
 
 .maui__nav--logo {
-  max-height: 70px;
-  font-weight: bold;
-  font-size: 24px;
+  perspective: 800px;
+  perspective-origin: 50% 50%;
+  width: 100%;
+  max-width: 64px;
+  max-height: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .nav__link--anchor {
@@ -91,7 +117,7 @@ header, body {
   width: 100vw;
 }
 
-#music__player {
+.maui__player {
   display: flex;
   justify-content: center;
   max-width: 100vw;
@@ -219,6 +245,7 @@ footer {
 
 .footer__logo--img {
   height: 70px;
+  cursor: crosshair;
 }
 
 .footer__social--list {
@@ -241,7 +268,6 @@ footer {
 .footer__anchor {
   padding-bottom: 24px;
   position: relative;
-  cursor: crosshair;
 }
 
 .footer__logo--popper {
@@ -254,6 +280,7 @@ footer {
 }
 
 .footer__anchor:hover .footer__logo--popper {
+  cursor: crosshair;
   transform: translateX(60px);
   opacity: 1;
 }
