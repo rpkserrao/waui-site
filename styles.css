@@ -82,9 +82,14 @@ li {
   margin: 2% auto;
 }
 
+.secret__link {
+  z-index: 3;
+}
+
 .nav__logo {
   max-height: 64px;
   max-width: 64px;
+  cursor: crosshair;
   transform-style: preserve-3d;
   animation: rotateText 5s infinite linear;
 }
