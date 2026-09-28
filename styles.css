@@ -115,7 +115,8 @@ header, body {
 }
 
 .album__art--wrapper {
-  padding-bottom: 8px;
+  width: 500px;
+  height: 500px;
 }
 
 .album__art--wrapper:before {
@@ -258,17 +259,18 @@ footer {
 }
 
 @media (max-width: 768px) {
-.nav__logo {
-  max-height: 56px;
-}
-
-    .album__art {
-    max-height: 250px;
-    max-width: 250px;
+  .nav__logo {
+    max-height: 56px;
   }
 
-  .album__art--wrapper{
-    max-height: 300px;
+  .album__art {
+    height: 350px;
+    width: 350px;
+  }
+
+  .album__art--wrapper {
+    width: 350px;
+    height: 350px;
   }
 
   .album__description {
@@ -299,12 +301,13 @@ footer {
   }
 
   .album__art {
-    max-height: 200px;
-    max-width: 200px;
+    height: 200px;
+    width: 200px;
   }
 
-  .album__art--wrapper{
-    max-height: 200px;
+  .album__art--wrapper {
+    width: 200px;
+    height: 200px;
   }
 
   .album:hover .album__description {
@@ -318,8 +321,13 @@ footer {
 
 @media (max-width: 410px) {
   .album__art {
-    max-height: 150px;
-    max-width: 150px;
+    height: 175px;
+    width: 175px;
+  }
+
+  .album__art--wrapper {
+    width: 175px;
+    height: 175px;
   }
   
 }
