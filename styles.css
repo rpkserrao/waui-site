@@ -188,7 +188,7 @@ header, body {
 
 .video__link {
   display: flex;
-  padding: 40px 0;
+  padding: 16px 0;
 }
 
 #merch {
@@ -232,15 +232,7 @@ footer {
 
 
 @media (max-width: 768px) {
-  /* .row {
-    margin: 0 auto;
-  }
-
-  .album__list {
-    width: 50%;
-  } */
-
-  .album__art {
+    .album__art {
     max-height: 250px;
     max-width: 250px;
   }
@@ -255,6 +247,10 @@ footer {
 
   .album:hover .album__description {
   transform: translateY(-250%);
+  }
+
+  .video__link {
+    font-size: 16px;
   }
 
   .footer__logo--img {
@@ -275,5 +271,9 @@ footer {
 
   .album:hover .album__description {
   transform: translateY(-200%);
+  }
+
+  .video__link {
+    font-size: 8px;
   }
 }
