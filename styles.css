@@ -166,7 +166,7 @@ header, body {
 .album__title, .album__year,
 .album__link {
   text-align: center;
-  color: grey;
+  color: rgb(72, 255, 0);
 }
 
 .video__player {
