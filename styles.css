@@ -32,7 +32,7 @@ a {
 }
 
 a:hover {
-  color: blueviolet;
+  color: rgb(255, 191, 71);
 }
 
 nav {
@@ -135,7 +135,7 @@ header, body {
 }
 
 .album__link:hover {
-  color: blueviolet;
+  color: rgb(255, 191, 71);
 }
 
 .maui__player {
