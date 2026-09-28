@@ -5,7 +5,6 @@
   margin: 0;
   box-sizing: border-box;
   text-decoration: none;
-  background-color: #242424;
 }
 
 html {
@@ -27,6 +26,15 @@ p {
   font-size: 16px;
 }
 
+a {
+  font-size: 24px;
+  color: black;
+}
+
+a:hover {
+  color: blueviolet;
+}
+
 nav {
   height: 100px;
   width: 100%;
@@ -41,9 +49,13 @@ li {
   list-style-type: none;
 }
 
+header, body {
+  background-color: #3b0063;
+}
 .container {
   position: relative;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   margin: 0 auto;
 }
@@ -51,7 +63,9 @@ li {
 .row {
   position: relative;
   display: flex;
-  margin: 0 auto;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 2% auto;
 }
 
 .maui__nav--logo {
@@ -59,17 +73,8 @@ li {
   font-size: 24px;
 }
 
-.nav__links {
-  font-size: 24px;
-  color: black;
-}
-
 .nav__link--anchor {
   color: black;
-}
-
-.nav__link--anchor:hover {
-  color: blueviolet;
 }
 
 .maui__metal--logo {
@@ -166,8 +171,47 @@ li {
 
 .video__player {
   padding: 0 50px;
-  padding-bottom: 40px;
   width: 100vw;
+}
+
+.video__link {
+  padding: 40px 0;
+}
+
+#merch {
+  display: none;
+  width: 100vw;
+  padding: 480px;
+}
+
+footer {
+  background-color: #242424;
+}
+
+.footer__row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 4% 0;
+}
+
+.footer__logo--img {
+  width: 70px;
+  height: 70px;
+}
+
+.footer__social--list {
+  width: 100%;
+  max-width: 500px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 28px;
+}
+
+.footer__social--link {
+  margin-bottom: 20px;
+  position: relative;
 }
 
 
