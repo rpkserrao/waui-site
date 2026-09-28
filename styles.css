@@ -259,6 +259,10 @@ footer {
 }
 
 @media (max-width: 768px) {
+.nav__logo {
+  max-height: 56px;
+}
+
     .album__art {
     max-height: 250px;
     max-width: 250px;
@@ -291,6 +295,10 @@ footer {
 
 
 @media (max-width: 480px) {
+.nav__logo {
+  max-height: 40px;
+}
+
   .album__art {
     max-height: 200px;
     max-width: 200px;
