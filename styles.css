@@ -79,7 +79,8 @@ header, body {
 }
 
 .maui__metal--logo {
-  max-width: 90vw;
+  max-width: 1366px;
+  width: 100vw;
 }
 
 #music__player {
