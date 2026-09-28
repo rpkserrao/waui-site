@@ -69,6 +69,7 @@ header, body {
 }
 
 .maui__nav--logo {
+  max-height: 70px;
   font-weight: bold;
   font-size: 24px;
 }
@@ -197,7 +198,6 @@ footer {
 }
 
 .footer__logo--img {
-  width: 70px;
   height: 70px;
 }
 
