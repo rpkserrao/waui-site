@@ -31,9 +31,13 @@ p {
   font-size: 16px;
 }
 
+a {
+  color: black;
+}
+
 a, path {
   font-size: 24px;
-  color: black;
+  
   cursor: crosshair;
 }
 
@@ -201,11 +205,9 @@ li {
   cursor: crosshair;
 }
 
-
-
 .album__links, .album__description,
 .album__title, .album__year,
-.album__link {
+.album__link, fab-i {
   text-align: center;
   color: rgb(72, 255, 0);
 }
