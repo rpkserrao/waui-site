@@ -232,9 +232,17 @@ footer {
 
 
 @media (max-width: 768px) {
+  /* .row {
+    margin: 0 auto;
+  }
+
+  .album__list {
+    width: 50%;
+  } */
+
   .album__art {
-    max-height: 300px;
-    max-width: 300px;
+    max-height: 250px;
+    max-width: 250px;
   }
 
   .album__art--wrapper{
