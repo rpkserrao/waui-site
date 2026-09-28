@@ -33,7 +33,11 @@ a, path {
   cursor: crosshair;
 }
 
-a, path:hover {
+a:hover {
+  color: rgb(255, 191, 71);
+}
+
+path:hover {
   color: rgb(255, 191, 71);
 }
 
