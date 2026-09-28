@@ -43,11 +43,14 @@ li {
 
 .container {
   position: relative;
+  display: flex;
+  justify-content: center;
   margin: 0 auto;
 }
 
 .row {
   position: relative;
+  display: flex;
   margin: 0 auto;
 }
 
@@ -159,6 +162,11 @@ li {
 .album__link {
   text-align: center;
   color: grey;
+}
+
+.video__player {
+  padding: 24px;
+  width: 100vw;
 }
 
 
